@@ -2,6 +2,10 @@ nav {
   background-color: #b90000;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  z-index: 999;
 }
 
 nav ul {
@@ -11,7 +15,7 @@ nav ul {
 }
 
 nav img {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 nav ul li {
@@ -20,12 +24,66 @@ nav ul li {
   color: #fff;
 }
 
+nav ul li:hover {
+	text-decoration: underline;
+}
+
 nav ul li button {
   width: 150px;
   color: #b90000;
   border-radius: 999px;
-  font-size: 20px;
+  font-size: 18px;
   border: 5px solid #fff;
+	background-color: #fff;
   height: 50px;
 }
 
+nav ul li button:hover {
+	color: #fff;
+	background-color: #b90000;
+	border: 1px solid #fff;
+	transition: .3s ease-in-out;
+}
+
+.hero {
+  top: 10vh;
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/hero.jpg);
+  background-size: cover;
+}
+
+.hero .text-content {
+	color: #fff;
+  text-align: center;
+}
+
+.hero .text-content h1 {
+  font-size: 70px;
+	margin-bottom: 15px;
+}
+
+.hero .text-content h3 {
+  font-size: 35px;
+	margin-bottom: 15px;
+}
+
+.hero .text-content button {
+  width: 250px;
+  color: #fff;
+	background-color: #b90000;
+  border-radius: 999px;
+  font-size: 18px;
+  border: 1px solid #b90000;
+  height: 50px;
+}
+
+.hero .text-content button:hover {
+	color: #b90000;
+	background-color: #fff;
+	border: 1px solid #fff;
+	transition: .3s ease-in-out;
+}
