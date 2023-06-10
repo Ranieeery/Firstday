@@ -61,6 +61,7 @@ nav ul li button:hover {
 
 .hero .text-content h1 {
   font-size: 70px;
+  font-weight: 900;
 	margin-bottom: 15px;
 }
 
@@ -84,4 +85,61 @@ nav ul li button:hover {
 	background-color: #fff;
 	border: 1px solid #fff;
 	transition: .3s ease-in-out;
+}
+
+.beneficios h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.beneficios .item {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.beneficios .item:nth-child(3) {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 90%;
+}
+
+.beneficios .item .itemPhoto .imgItem {
+  width: 80%;
+  height: auto;
+}
+
+.beneficios .item:nth-child(3) .itemPhoto {
+  display: flex;
+  justify-content: right;
+  width: 50%;
+  padding-right: 10%;
+}
+
+
+.beneficios .item .item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  padding-left: 10%;
+  width: 50%;
+}
+
+.beneficios .item:nth-child(3) .item-content {
+  justify-content: left;
+  padding-left: 10%;
+}
+
+.beneficios .item .item-content h3 {
+  color: #b90000;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.beneficios .item .item-content p {
+  padding-right: 40%;
 }
