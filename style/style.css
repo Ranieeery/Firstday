@@ -46,8 +46,6 @@ nav ul li button:hover {
 }
 
 .hero {
-  top: 10vh;
-  position: relative;
   height: 90vh;
   display: flex;
   align-items: center;
