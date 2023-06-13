@@ -25,7 +25,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav ul li button {
@@ -34,15 +34,15 @@ nav ul li button {
   border-radius: 999px;
   font-size: 18px;
   border: 5px solid #fff;
-	background-color: #fff;
+  background-color: #fff;
   height: 50px;
 }
 
 nav ul li button:hover {
-	color: #fff;
-	background-color: #b90000;
-	border: 1px solid #fff;
-	transition: .3s ease-in-out;
+  color: #fff;
+  background-color: #b90000;
+  border: 1px solid #fff;
+  transition: 0.3s ease-in-out;
 }
 
 .hero {
@@ -55,25 +55,25 @@ nav ul li button:hover {
 }
 
 .hero .text-content {
-	color: #fff;
+  color: #fff;
   text-align: center;
 }
 
 .hero .text-content h1 {
   font-size: 70px;
   font-weight: 900;
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .hero .text-content h3 {
   font-size: 35px;
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .hero .text-content button {
   width: 250px;
   color: #fff;
-	background-color: #b90000;
+  background-color: #b90000;
   border-radius: 999px;
   font-size: 18px;
   border: 1px solid #b90000;
@@ -81,10 +81,10 @@ nav ul li button:hover {
 }
 
 .hero .text-content button:hover {
-	color: #b90000;
-	background-color: #fff;
-	border: 1px solid #fff;
-	transition: .3s ease-in-out;
+  color: #b90000;
+  background-color: #fff;
+  border: 1px solid #fff;
+  transition: 0.3s ease-in-out;
 }
 
 .beneficios h2 {
@@ -119,7 +119,6 @@ nav ul li button:hover {
   padding-right: 10%;
 }
 
-
 .beneficios .item .item-content {
   display: flex;
   flex-direction: column;
@@ -142,4 +141,57 @@ nav ul li button:hover {
 
 .beneficios .item .item-content p {
   padding-right: 40%;
+}
+
+.testimonial {
+  height: 90vh;
+  background-image: linear-gradient(
+    to top,
+    rgba(185, 0, 0, 0.2),
+    rgba(255, 255, 255, 1)
+  );
+}
+
+.testimonial .text {
+  text-align: center;
+}
+
+.testimonial .text h2 {
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial .text p {
+  font-size: 1.1rem;
+}
+
+.testimonial .container-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0px 50px;
+}
+
+.testimonial .container-cards .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px 20px 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  height: 50vh;
+  text-align: left;
+  width: 25%;
+}
+
+.testimonial .container-cards .card h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 3rem;
+    color: #b90000;
+}
+
+.testimonial .container-cards .card q {
+    font-size: 0.7rem;
+    line-height: 2rem;
 }
