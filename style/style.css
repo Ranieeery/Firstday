@@ -18,13 +18,14 @@ nav img {
   margin-left: 20px;
 }
 
-nav ul li {
+nav ul li a {
   margin-right: 25px;
   font-size: 20px;
   color: #fff;
+  text-decoration: none;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
   text-decoration: underline;
 }
 
@@ -248,7 +249,7 @@ nav ul li button:hover {
   font-weight: bold;
 }
 
-.testimonial .container-cards .card .card-content .person span{
+.testimonial .container-cards .card .card-content .person span {
   font-size: 0.8rem;
   color: #808080;
   margin-top: 10px;
@@ -258,7 +259,7 @@ nav ul li button:hover {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   font-weight: bolder;
-  color: #E43071;
+  color: #e43071;
 }
 
 .testimonial .container-cards .card q {
