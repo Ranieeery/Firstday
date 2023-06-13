@@ -144,7 +144,8 @@ nav ul li button:hover {
 }
 
 .testimonial {
-  height: 90vh;
+  min-height: 90vh;
+  width: 100%;
   background-image: linear-gradient(
     to top,
     rgba(185, 0, 0, 0.2),
@@ -153,10 +154,11 @@ nav ul li button:hover {
 }
 
 .testimonial .text {
-  text-align: center;
+  text-align: left;
 }
 
 .testimonial .text h2 {
+  font-weight: bolder;
   font-size: 3rem;
   margin-top: 5rem;
   margin-bottom: 2rem;
@@ -168,30 +170,111 @@ nav ul li button:hover {
 
 .testimonial .container-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
   padding: 0px 50px;
+}
+
+.testimonial .container-cards .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 40%;
+  margin-right: 20px;
+}
+
+.testimonial .container-cards .left .card.vertical {
+  width: 300px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.testimonial .container-cards .right {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding-top: 200px;
+}
+
+.testimonial .container-cards .right .card.horizontal {
+  width: 400px;
+  height: 280px;
+}
+.testimonial .container-cards .right .card.retangular {
+  margin-top: 20px;
+  width: 330px;
+  height: 250px;
 }
 
 .testimonial .container-cards .card {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  padding: 10px 20px 5px;
+  padding: 40px 20px 10px 30px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  height: 50vh;
   text-align: left;
-  width: 25%;
+  border-radius: 10px;
+  min-width: 200px;
+}
+
+.testimonial .container-cards .card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.testimonial .container-cards .card .card-content .person {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.testimonial .container-cards .card .card-content .person .image {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.testimonial .container-cards .card .card-content .person .text-content {
+  margin-left: 20px;
+}
+
+.testimonial .container-cards .card .card-content .person h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.testimonial .container-cards .card .card-content .person span{
+  font-size: 0.8rem;
+  color: #808080;
+  margin-top: 10px;
 }
 
 .testimonial .container-cards .card h3 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 3rem;
-    color: #b90000;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bolder;
+  color: #E43071;
 }
 
 .testimonial .container-cards .card q {
-    font-size: 0.7rem;
-    line-height: 2rem;
+  font-size: 0.7rem;
+  line-height: 2rem;
+  padding-left: 30px;
+  position: relative;
+}
+
+.testimonial .container-cards .card q::before {
+  content: "“";
+  font-family: "ABeeZee", serif;
+  font-style: italic;
+  font-size: 5rem;
+  color: rgba(185, 0, 0, 0.4);
+  position: absolute;
+  top: 5px;
+  left: -15px;
 }
