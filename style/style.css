@@ -38,6 +38,7 @@ nav ul li button {
   background-color: #fff;
   height: 50px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 nav ul li button:hover {
@@ -80,6 +81,7 @@ nav ul li button:hover {
   font-size: 18px;
   border: 1px solid #b90000;
   height: 50px;
+  cursor: pointer;
 }
 
 .hero .text-content button:hover {
@@ -428,6 +430,7 @@ nav ul li button:hover {
   font-size: 18px;
   border: 1px solid #b90000;
   height: 50px;
+  cursor: pointer;
 }
 
 .contato form .buttonForm button:hover {
