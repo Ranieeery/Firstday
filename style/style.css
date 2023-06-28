@@ -280,8 +280,11 @@ nav ul li button:hover {
   left: -15px;
 }
 
+.beneficios h2,
+.testimonial h2,
 .conheca h2,
-.fotos h2 {
+.fotos h2,
+.contato h2 {
   font-size: 3rem;
   font-weight: bold;
   margin-top: 30px;
@@ -337,11 +340,12 @@ nav ul li button:hover {
 }
 
 .fotos .container-cards {
+  margin-top: 30px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-right: 30px;
+  margin: 0 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -350,14 +354,85 @@ nav ul li button:hover {
 }
 
 .fotos .container-cards img {
-  width: 450px;
+  width: 100%;
 }
 
 .contato {
+  margin-top: 80px;
   height: 80vh;
 }
 
 .contato .text-content h2{
   font-size: bolder;
   font-size: 3rem;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 45%;
+  margin-top: 50px;
+}
+
+.contato form .row {
+  display: flex;
+  margin-bottom: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.contato form .row .input-field {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  width: 100%;
+}
+
+.contato form .row .input-field input {
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  width: 100%;
+  border: 1px solid #000;
+
+}
+
+.contato form .row .input-field label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contato form .row .input-field textarea {
+  padding: 5px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1.2rem;
+  resize: vertical;
+  border: 1px solid #000;
+}
+
+.contato form .row .input-field textarea:focus,
+.contato form .row .input-field input:focus {
+  outline: 1px solid #000;
+}
+
+.contato form .buttonForm button {
+  width: 200px;
+  color: #fff;
+  background-color: #b90000;
+  border-radius: 999px;
+  font-size: 18px;
+  border: 1px solid #b90000;
+  height: 50px;
+}
+
+.contato form .buttonForm button:hover {
+  color: #b90000;
+  background-color: #fff;
+  border: 1px solid #b90000;
+  transition: 0.3s ease-in-out;
 }
