@@ -352,3 +352,12 @@ nav ul li button:hover {
 .fotos .container-cards img {
   width: 450px;
 }
+
+.contato {
+  height: 80vh;
+}
+
+.contato .text-content h2{
+  font-size: bolder;
+  font-size: 3rem;
+}
