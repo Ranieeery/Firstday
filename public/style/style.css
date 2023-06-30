@@ -98,29 +98,25 @@ nav ul li button:hover {
 }
 
 .beneficios .item {
-  margin-top: 40px;
+  margin-top: 70px;
   display: flex;
-  justify-content: center;
-  width: 90%;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 90%; 
 }
 
-.beneficios .item:nth-child(3) {
-  margin-top: 40px;
-  display: flex;
+.beneficios .item.reverse {
   flex-direction: row-reverse;
-  width: 90%;
 }
 
-.beneficios .item .itemPhoto .imgItem {
+.beneficios .item.reverse .itemPhoto {
+  justify-content: right;
+}
+
+.beneficios .item .item-photo .imgItem {
   width: 80%;
   height: auto;
-}
-
-.beneficios .item:nth-child(3) .itemPhoto {
-  display: flex;
-  justify-content: right;
-  width: 50%;
-  padding-right: 10%;
 }
 
 .beneficios .item .item-content {
