@@ -103,14 +103,19 @@ nav ul li button:hover {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  width: 90%; 
+  width: 90%;
+}
+
+.beneficios .item .item-photo {
+  display: flex;
+  justify-content: left;
 }
 
 .beneficios .item.reverse {
   flex-direction: row-reverse;
 }
 
-.beneficios .item.reverse .itemPhoto {
+.beneficios .item.reverse .item-photo {
   justify-content: right;
 }
 
@@ -123,24 +128,16 @@ nav ul li button:hover {
   display: flex;
   flex-direction: column;
   justify-content: right;
-  padding-left: 10%;
   width: 50%;
-}
-
-.beneficios .item:nth-child(3) .item-content {
-  justify-content: left;
-  padding-left: 10%;
+  max-width: 50vw;
+  line-height: 2em;
 }
 
 .beneficios .item .item-content h3 {
   color: #b90000;
   font-size: 30px;
-  font-weight: 400;
-  margin-bottom: 30px;
-}
-
-.beneficios .item .item-content p {
-  padding-right: 40%;
+  font-weight: 600;
+  margin-bottom: 38px;
 }
 
 .testimonial {
